@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --color-base: #0f0f1c;
+  --color-grad-1: #9746ef;
+  --color-grad-2: #622eb6;
+  --color-secondary: #e77ff5;
+
+  --font-goldman: Goldman, sans-serif;
+  --font-orbitron: Orbitron, sans-serif;
+  --font-poppins: Poppins, sans-serif;
+}
