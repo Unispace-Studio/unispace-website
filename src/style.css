@@ -10,3 +10,7 @@
   --font-orbitron: Orbitron, sans-serif;
   --font-poppins: Poppins, sans-serif;
 }
+
+.bg-main-grad {
+  background: linear-gradient(180deg, #9746ef 0%, #622eb6 100%);
+}

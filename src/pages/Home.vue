@@ -7,6 +7,9 @@ import AboutSection from "../components/AboutSection.vue";
     <div
       class="w-[1510px] h-[1510px] bg-[radial-gradient(50%_50%_at_50%_50%,_#6c3eff26_0%,_#6c3eff00_100%)] absolute z-0 top-[-634px] left-[-576px]"
     ></div>
+    <div
+      class="w-[1024px] h-[1024px] bg-[radial-gradient(50%_50%_at_50%_50%,_#6c3eff26_0%,_#6c3eff00_100%)] absolute z-0 top-[986px] left-[856px]"
+    ></div>
     <HeroSection />
     <AboutSection />
   </div>
