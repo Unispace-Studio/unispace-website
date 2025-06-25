@@ -50,7 +50,7 @@ const service = [
 <template>
   <div
     id="service-section"
-    class="w-full h-[calc(200vh)] flex flex-col gap-[76px] pt-[72px]"
+    class="w-full h-[calc(200vh)] flex flex-col gap-[76px] pt-[72px] relative z-10"
   >
     <div class="w-full flex flex-col items-center gap-[32px]">
       <h2 class="text-[52px] font-goldman">Layanan Kami</h2>

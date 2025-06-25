@@ -15,7 +15,7 @@ const scrollingTexts = [
 </script>
 
 <template>
-  <div id="about-section" class="w-full h-screen">
+  <div id="about-section" class="w-full h-screen relative z-10">
     <div class="w-full h-[90px] bg-white/10 overflow-hidden">
       <div
         id="slider"

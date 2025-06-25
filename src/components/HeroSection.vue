@@ -5,7 +5,7 @@ import Navbar from "./Navbar.vue";
 <template>
   <div
     id="hero-section"
-    class="w-full h-screen flex flex-col items-center pt-[50px] overflow-hidden relative"
+    class="w-full h-screen flex flex-col items-center pt-[50px] overflow-hidden relative z-10"
   >
     <Navbar />
     <img src="../assets/rocket.png" alt="" class="absolute right-0 z-0" />
