@@ -7,6 +7,7 @@ import PortfolioSection from "../components/PortfolioSection.vue";
 import CallToActionSection from "../components/CallToActionSection.vue";
 import WhyChooseUsSection from "../components/WhyChooseUsSection.vue";
 import PricingSection from "../components/PricingSection.vue";
+import Footer from "../components/Footer.vue";
 </script>
 <template>
   <div
@@ -30,5 +31,6 @@ import PricingSection from "../components/PricingSection.vue";
     <PricingSection />
     <WhyChooseUsSection />
     <CallToActionSection />
+    <Footer />
   </div>
 </template>
