@@ -5,6 +5,7 @@ import ServiceSection from "../components/ServiceSection.vue";
 import ProcessSection from "../components/ProcessSection.vue";
 import PortfolioSection from "../components/PortfolioSection.vue";
 import CallToActionSection from "../components/CallToActionSection.vue";
+import WhyChooseUsSection from "../components/WhyChooseUsSection.vue";
 </script>
 <template>
   <div
@@ -25,6 +26,7 @@ import CallToActionSection from "../components/CallToActionSection.vue";
     <ServiceSection />
     <ProcessSection />
     <PortfolioSection />
+    <WhyChooseUsSection />
     <CallToActionSection />
   </div>
 </template>

@@ -19,7 +19,7 @@
         </p>
       </div>
       <button
-        class="px-[115px] py-[18px] rounded-[10px] bg-gradient-to-b from-grad-1 to-grad-2 text-[24px] font-bold"
+        class="px-[38px] py-[10px] rounded-[10px] bg-gradient-to-b from-grad-1 to-grad-2 text-[20px] font-bold"
       >
         Konsultasi gratis
       </button>
