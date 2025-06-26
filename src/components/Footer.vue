@@ -1,7 +1,21 @@
 <script setup>
 const socials = ["facebook", "instagram", "x", "linkedin"];
-const quickLinks = ["Beranda", "Tentang Kami", "Portfolio", "Kontak"]
-const layanan = ["Layanan Kami", "Tahapan Kerja", "Harga Paket"]
+const quickLinks = [
+    { name: "Beranda", link: "hero-section" },
+    { name: "Tentang Kami", link: "about-section" },
+    { name: "Portfolio", link: "portfolio-section" },
+    { name: "Kontak", link: "footer" },
+];
+const layanan = [
+    { name: "Layanan Kami", link: "service-section" },
+    { name: "Tahapan Kerja", link: "process-section" },
+    { name: "Harga Paket", link: "pricing-section" },
+];
+
+const scrollTo = (sectionId) => {
+    const target = document.getElementById(sectionId);
+    target?.scrollIntoView({ behavior: "smooth" });
+};
 </script>
 
 <template>
@@ -30,14 +44,14 @@ const layanan = ["Layanan Kami", "Tahapan Kerja", "Harga Paket"]
                         <div class="w-[52px] h-[3px] bg-gradient-to-b from-grad-1 to-grad-2 gap-[8px]"></div>
                     </div>
                     <div class="flex flex-col gap-[12px]">
-                        <div class="flex items-center gap-[4px] group hover:ml-[8px]  cursor-pointer"
-                            v-for="item in quickLinks" :key="item.id">
-                            <svg class="fill-white group-hover:fill-grad-2" xmlns="http://www.w3.org/2000/svg" width="6"
-                                height="12" viewBox="0 0 6 12" fill="none">
+                        <div class="flex items-center gap-[4px] group hover:ml-[8px] cursor-pointer"
+                            v-for="item in quickLinks" :key="item.id" @click="scrollTo(item.link)">
+                            <svg class=" fill-white group-hover:fill-grad-2" xmlns="http://www.w3.org/2000/svg"
+                                width="6" height="12" viewBox="0 0 6 12" fill="none">
                                 <path
                                     d="M0.247666 11.7337C0.573851 12.0888 1.10275 12.0888 1.42893 11.7337L5.51127 7.28482C6.16312 6.57452 6.16287 5.42346 5.51077 4.71343L1.42592 0.266342C1.09974 -0.0887806 0.570844 -0.0887806 0.244651 0.266342C-0.0815504 0.621473 -0.0815504 1.19724 0.244651 1.55237L3.74081 5.35862C4.06707 5.71372 4.06707 6.28953 3.74081 6.64463L0.247666 10.4477C-0.0785353 10.8028 -0.0785353 11.3785 0.247666 11.7337Z" />
                             </svg>
-                            <p class="medium group-hover:text-grad-2">{{ item }}</p>
+                            <p class="medium group-hover:text-grad-2">{{ item.name }}</p>
                         </div>
                     </div>
                 </div>
@@ -48,13 +62,13 @@ const layanan = ["Layanan Kami", "Tahapan Kerja", "Harga Paket"]
                     </div>
                     <div class="flex flex-col gap-[12px]">
                         <div class="flex items-center gap-[4px] group hover:ml-[8px] cursor-pointer"
-                            v-for="item in layanan" :key="item.id">
+                            v-for="item in layanan" :key="item.id" @click="scrollTo(item.link)">
                             <svg class="fill-white group-hover:fill-grad-2" xmlns="http://www.w3.org/2000/svg" width="6"
                                 height="12" viewBox="0 0 6 12" fill="none">
                                 <path
                                     d="M0.247666 11.7337C0.573851 12.0888 1.10275 12.0888 1.42893 11.7337L5.51127 7.28482C6.16312 6.57452 6.16287 5.42346 5.51077 4.71343L1.42592 0.266342C1.09974 -0.0887806 0.570844 -0.0887806 0.244651 0.266342C-0.0815504 0.621473 -0.0815504 1.19724 0.244651 1.55237L3.74081 5.35862C4.06707 5.71372 4.06707 6.28953 3.74081 6.64463L0.247666 10.4477C-0.0785353 10.8028 -0.0785353 11.3785 0.247666 11.7337Z" />
                             </svg>
-                            <p class="medium group-hover:text-grad-2">{{ item }}</p>
+                            <p class="medium group-hover:text-grad-2">{{ item.name }}</p>
                         </div>
                     </div>
                 </div>
@@ -66,22 +80,26 @@ const layanan = ["Layanan Kami", "Tahapan Kerja", "Harga Paket"]
                 </div>
                 <div class="flex items-center gap-[20px] group cursor-pointer">
                     <div
-                        class="w-[50px] h-[50px] rounded-[10px] bg-gradient-to-b from-grad-1 to-grad-2 group group-hover:from-white group-hover:to-white  transition-all duration-150 flex justify-center items-center">
-                        <img src="/assets/icons/phone.svg" alt="">
+                        class="w-[50px] h-[50px] rounded-[10px] bg-gradient-to-b from-grad-1 to-grad-2 group group-hover:from-white group-hover:to-white transition-all duration-150 flex justify-center items-center">
+                        <img src="/assets/icons/phone.svg" alt="" />
                     </div>
                     <div class="flex flex-col gap-[2px] text-[18px] font-medium">
                         <p>No Telepon:</p>
-                        <p class="group-hover:text-grad-2 transition-all duration-150">+62 892 1239 8213</p>
+                        <p class="group-hover:text-grad-2 transition-all duration-150">
+                            +62 817 4745 070
+                        </p>
                     </div>
                 </div>
                 <div class="flex items-center gap-[20px] group cursor-pointer">
                     <div
                         class="w-[50px] h-[50px] rounded-[10px] bg-gradient-to-b from-grad-1 to-grad-2 group-hover:from-white group-hover:to-white transition-all duration-150 flex justify-center items-center">
-                        <img src="/assets/icons/email.svg" alt="">
+                        <img src="/assets/icons/email.svg" alt="" />
                     </div>
                     <div class="flex flex-col gap-[2px] text-[18px] font-medium group">
                         <p>Email:</p>
-                        <p class="group-hover:text-grad-2 transition-all duration-150">+62 892 1239 8213</p>
+                        <p class="group-hover:text-grad-2 transition-all duration-150">
+                            contact@unispace.id
+                        </p>
                     </div>
                 </div>
             </div>
