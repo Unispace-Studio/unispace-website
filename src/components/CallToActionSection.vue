@@ -5,7 +5,7 @@
     class="w-full xl:h-screen flex justify-center items-center relative z-10 px-[12px] xl:px-0 mb-[60px] xl:mb-0">
     <div
       class="xl:w-[1227px] h-[480px] rounded-[15px] flex flex-col gap-[80px] items-start justify-center bg-[url(/assets/cta-bg.png)] px-[56px] relative">
-      <!-- <img src="/assets/laptop.png" alt="" class="absolute right-0" /> -->
+      <img src="/assets/laptop.png" alt="" class="absolute right-0 hidden xl:inline" />
       <div class="flex flex-col gap-[24px] xl:w-[704px]">
         <h4 class="text-[20px] xl:text-[42px] font-goldman font-bold">
           Bangun website profesional untuk bisnismu hari ini!
