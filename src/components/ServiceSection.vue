@@ -6,42 +6,42 @@ const service = [
     title: "E-Commerce",
     description:
       "Jual produkmu secara online dengan toko modern yang responsif dan aman.",
-    image: "", // tambahkan path ke gambar
+    image: "e-commerce", // tambahkan path ke gambar
     position: "object-left",
   },
   {
     title: "Personal Website",
     description:
       "Tampilkan karya dan branding personalmu lewat website yang unik dan profesional.",
-    image: "",
+    image: "personal",
     position: "object-center",
   },
   {
     title: "Business Dashboard",
     description:
       "Kelola data dan operasional bisnismu lewat dashboard yang rapi dan mudah digunakan.",
-    image: "",
+    image: "business-dashboard",
     position: "object-right",
   },
   {
     title: "Company Profile",
     description:
       "Bangun citra profesional untuk bisnismu lewat website profil yang modern dan informatif.",
-    image: "",
+    image: "e-commerce",
     position: "object-left",
   },
   {
     title: "Landing Page",
     description:
       "Tingkatkan konversi dengan landing page yang fokus, cepat, dan menarik perhatian.",
-    image: "",
+    image: "e-commerce",
     position: "object-center",
   },
   {
     title: "Blog",
     description:
       "Bagikan ide, berita, atau artikel informatif lewat platform blog yang rapi dan SEO-friendly.",
-    image: "",
+    image: "e-commerce",
     position: "object-right",
   },
 ];

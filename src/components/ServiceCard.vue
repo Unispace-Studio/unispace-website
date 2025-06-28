@@ -12,5 +12,6 @@ const props = defineProps(["item"]);
         <p class="text-[14px] w-[260px] xl:w-[282px]">{{ props.item.description }}</p>
       </div>
     </div>
+    <img :src="'/assets/' + props.item.image + '.png'" alt="" class="absolute top-0 left-0 z-50">
   </div>
 </template>

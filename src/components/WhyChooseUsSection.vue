@@ -23,7 +23,7 @@ const values = [
 
 <template>
   <div id="whychooseus-section"
-    class="w-full xl:h-[calc(150vh)] flex flex-col gap-[76px] pt-[72px] relative z-10 px-[12px] xl:px-0">
+    class="w-full xl:h-[calc(150vh)] flex flex-col gap-[76px] pt-[72px] relative z-10 px-[12px] xl:px-0 mb-[60px] xl:mb-0">
     <div class="w-full flex flex-col items-center gap-[32px] text-center xl:text-start">
       <h2 class="text-[40px] xl:text-[52px] font-goldman">Mengapa Memilih Kami</h2>
       <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center">

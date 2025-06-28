@@ -1,5 +1,5 @@
 <script setup>
-const socials = ["facebook", "instagram", "x", "linkedin"];
+const socials = [{ name: "facebook", link: "https://www.facebook.com/unispace.id/" }, { name: "instagram", link: "https://www.instagram.com/unispacestudio/" }, { name: "x", link: "" }, { name: "linkedin", link: "" }];
 const quickLinks = [
     { name: "Beranda", link: "hero-section" },
     { name: "Tentang Kami", link: "about-section" },
@@ -19,25 +19,25 @@ const scrollTo = (sectionId) => {
 </script>
 
 <template>
-    <div id="footer" class="w-full h-[75vh] hidden xl:flex flex-col justify-end items-center relative z-10">
-        <div class="h-full flex items-center gap-[100px]">
-            <div class="w-[400px] flex flex-col gap-[24px]">
+    <div id="footer" class="w-full xl:h-[75vh] flex flex-col justify-end items-center relative z-10 px-[12px] xl:px-0">
+        <div class="h-full flex flex-col xl:flex-row items-center gap-[80px] xl:gap-[100px]">
+            <div class="xl:w-[400px] flex flex-col gap-[24px] items-center xl:items-start">
                 <div id="logo" class="flex gap-[22px] items-center">
-                    <img src="../assets/logo.png" alt="" class="h-[56px]" />
-                    <img src="../assets/logo-text.svg" alt="" class="h-[52px]" />
+                    <img src="../assets/logo.png" alt="" class="h-[calc(60/100*56)] xl:h-[56px]" />
+                    <img src="../assets/logo-text.svg" alt="" class="h-[calc(60/100*52)] xl:h-[52px]" />
                 </div>
-                <p class="text-[18px] font-medium">
+                <p class="text-[14px] xl:text-[18px] text-center xl:text-start font-medium">
                     Tampilkan bisnis kamu lebih modern dan terpercaya dengan website cepat
                     jadi dari Unispace.
                 </p>
                 <div class="flex gap-[8px]">
                     <div class="w-[40px] h-[40px] flex rounded-[5px] justify-center items-center bg-gradient-to-b from-grad-1 to-grad-2 hover:from-white hover:to-white cursor-pointer transition-all duration-150"
                         v-for="item in socials" :key="item.id">
-                        <img :src="'/assets/icons/' + item + '.svg'" alt="" />
+                        <a href=""><img :src="'/assets/icons/' + item.name + '.svg'" alt="" /></a>
                     </div>
                 </div>
             </div>
-            <div class="flex gap-[45px]">
+            <div class="flex justify-center xl:justify-start gap-[32px] xl:gap-[45px]">
                 <div class="w-[155px] flex flex-col gap-[22px]">
                     <div class="flex flex-col gap-[8px]">
                         <h4 class="text-[24px] font-semibold">Quick Link</h4>
@@ -73,7 +73,7 @@ const scrollTo = (sectionId) => {
                     </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-[22px]">
+            <div class="flex flex-col gap-[22px] items-center xl:items-start">
                 <div class="flex flex-col gap-[8px]">
                     <h4 class="text-[24px] font-semibold">Kontak Kami</h4>
                     <div class="w-[52px] h-[3px] bg-gradient-to-b from-grad-1 to-grad-2 gap-[8px]"></div>
@@ -104,7 +104,7 @@ const scrollTo = (sectionId) => {
                 </div>
             </div>
         </div>
-        <p class="text-center py-[20px]">
+        <p class="text-center pt-[80px] xl:pt-[20px] pb-[20px]">
             Copyright©2025 <span class="text-grad-2">UNISPACE</span> All rights
             reserved.
         </p>
