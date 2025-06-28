@@ -16,7 +16,7 @@
         </p>
       </div>
       <button class="px-[38px] py-[10px] rounded-[10px] bg-gradient-to-b from-grad-1 to-grad-2 text-[20px] font-bold">
-        Konsultasi gratis
+        <a href="https://wa.me/628174745070">Konsultasi gratis</a>
       </button>
     </div>
   </div>

@@ -26,8 +26,8 @@ const scrollTo = (sectionId) => {
         </div>
         <div class="flex flex-col xl:flex-row gap-[29px]">
           <button
-            class="bg-gradient-to-b from-grad-1 to-grad-2 px-[24px] py-[15px] font-medium rounded-[10px] cursor-pointer">
-            Konsultasi Gratis via WhatsApp
+            class="bg-gradient-to-b from-grad-1 to-grad-2 px-[24px] py-[15px] font-medium rounded-[10px] cursor-pointer"><a
+              href="https://wa.me/628174745070">Konsultasi Gratis via WhatsApp</a>
           </button>
           <button
             class="border border-[#52526E] px-[24px] py-[15px] text-secondary font-medium rounded-[10px] cursor-pointer"
