@@ -6,7 +6,7 @@ const props = defineProps(["item"]);
   <div id="portfolio-card"
     class="w-[320px] xl:w-[360px] h-[415px] rounded-[16px] bg-white/10 flex flex-col justify-center items-center gap-[32px]">
     <div class="h-[calc(270/290*163px)] xl:h-[163px] w-[270px] xl:w-[290px] rounded-[10px] overflow-hidden bg-white">
-      <img src="" alt="" />
+      <img :src="'/assets/' + props.item.title.toLowerCase() + '.png'" alt="" />
     </div>
     <div class="flex flex-col gap-[28px] justify-center w-[270px] xl:w-[290px]">
       <div class="flex flex-col gap-[12px] justify-center text-center">

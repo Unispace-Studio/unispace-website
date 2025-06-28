@@ -6,25 +6,25 @@ const portfolios = [
     title: "Freshbite",
     description:
       "Jual produkmu secara online dengan toko modern yang responsif dan aman.",
-    image: "",
+    link: "https://freshbite-nine.vercel.app",
   },
   {
     title: "Avantis",
     description:
-      "Jual produkmu secara online dengan toko modern yang responsif dan aman.",
-    image: "",
+      "Bangun kredibilitas software house-mu dengan website profesional dan modern.",
+    link: "",
   },
   {
-    title: "QuickPick",
+    title: "Delishmade",
     description:
-      "Jual produkmu secara online dengan toko modern yang responsif dan aman.",
-    image: "",
+      "Bagikan resep favoritmu lewat website kuliner interaktif yang menarik dan mudah diakses.",
+    link: "",
   },
   {
     title: "LinkBit",
     description:
       "Jual produkmu secara online dengan toko modern yang responsif dan aman.",
-    image: "",
+    link: "",
   },
 ];
 </script>
