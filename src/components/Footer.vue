@@ -33,7 +33,7 @@ const scrollTo = (sectionId) => {
                 <div class="flex gap-[8px]">
                     <div class="w-[40px] h-[40px] flex rounded-[5px] justify-center items-center bg-gradient-to-b from-grad-1 to-grad-2 hover:from-white hover:to-white cursor-pointer transition-all duration-150"
                         v-for="item in socials" :key="item.id">
-                        <a href=""><img :src="'/assets/icons/' + item.name + '.svg'" alt="" /></a>
+                        <a :href="item.link"><img :src="'/assets/icons/' + item.name + '.svg'" alt="" /></a>
                     </div>
                 </div>
             </div>
