@@ -38,18 +38,19 @@ const steps = [
 </script>
 
 <template>
-  <div id="process-section" class="w-full h-[calc(175vh)] flex flex-col gap-[76px] pt-[72px] relative z-10">
+  <div id="process-section"
+    class="w-full xl:h-[calc(175vh)] flex flex-col gap-[76px] pt-[72px] relative z-10 px-[12px] xl:px-0">
     <div class="w-full flex flex-col items-center gap-[32px]">
-      <h2 class="text-[52px] font-goldman">Tahapan Kerja</h2>
-      <p class="text-[20px] w-[960px] text-center">
+      <h2 class="text-[40px] xl:text-[52px] font-goldman">Tahapan Kerja</h2>
+      <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center">
         Proses kerja yang kami susun secara sistematis untuk memastikan hasil
         akhir yang maksimal dan sesuai ekspektasi Anda
       </p>
     </div>
     <div class="flex justify-center gap-[80px]">
       <div>
-        <div class="flex items-center gap-[48px]" :class="[index !== steps.length - 1 ? '' : 'mt-[-23px]']"
-          v-for="(item, index) in steps" :key="item.id">
+        <div class="flex items-center gap-[28px] xl:gap-[48px]"
+          :class="[index !== steps.length - 1 ? '' : 'mt-[-23px]']" v-for="(item, index) in steps" :key="item.id">
           <div class="flex flex-col items-center group">
             <div id="box1"
               class="w-[69px] h-[64px] bg-white/10 hover:bg-gradient-to-b from-grad-1 to-grad-2 rounded-[10px] flex justify-center items-center">
@@ -59,12 +60,12 @@ const steps = [
               class="w-[6px] h-[70px] bg-white/10 group-hover:bg-gradient-to-b from-grad-2 to-white/10"></div>
           </div>
           <div class="flex flex-col gap-[15px]" :class="[index !== steps.length - 1 ? 'mt-[-50px]' : '']">
-            <h4 class="text-[32px] font-goldman">{{ item.title }}</h4>
-            <p class="w-[488px]">{{ item.description }}</p>
+            <h4 class="text-[18px] xl:text-[32px] font-goldman">{{ item.title }}</h4>
+            <p class="text-[14px] xl:w-[488px]">{{ item.description }}</p>
           </div>
         </div>
       </div>
-      <div class="w-[400px] h-[400px] rounded-[16px] bg-white"></div>
+      <div class="w-[400px] h-[400px] rounded-[16px] bg-white hidden xl:inline-block"></div>
     </div>
   </div>
 </template>

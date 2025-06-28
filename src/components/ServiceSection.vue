@@ -48,13 +48,11 @@ const service = [
 </script>
 
 <template>
-  <div
-    id="service-section"
-    class="w-full h-[calc(200vh)] flex flex-col gap-[76px] pt-[72px] relative z-10"
-  >
+  <div id="service-section"
+    class="w-full xl:h-[calc(200vh)] flex flex-col gap-[76px] pt-[72px] relative z-10 px-[12px] xl:px-0">
     <div class="w-full flex flex-col items-center gap-[32px]">
-      <h2 class="text-[52px] font-goldman">Layanan Kami</h2>
-      <p class="text-[20px] w-[960px] text-center">
+      <h2 class="text-[40px] xl:text-[52px] font-goldman">Layanan Kami</h2>
+      <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center">
         Kami menyediakan berbagai solusi pembuatan website yang disesuaikan
         dengan kebutuhan bisnis dan personal Anda.
       </p>

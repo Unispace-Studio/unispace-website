@@ -32,7 +32,7 @@ const scrollTo = (sectionId) => {
 </script>
 <template>
   <div id="home" class="font-poppins text-white bg-base overflow-hidden relative">
-    <div
+    <!-- <div
       class="w-[1510px] h-[1510px] bg-[radial-gradient(50%_50%_at_50%_50%,_#6c3eff26_0%,_#6c3eff00_100%)] absolute z-0 top-[-634px] left-[-576px]">
     </div>
     <div
@@ -45,7 +45,7 @@ const scrollTo = (sectionId) => {
       class="w-[40px] h-[40px] rounded-full flex justify-center items-center bg-gradient-to-b from-grad-1 to-grad-2 fixed bottom-[40px] right-[40px] z-50 cursor-pointer transition-all duration-150"
       v-show="showButton" @click="scrollTo('hero-section')">
       <img src="/assets/icons/up.svg" alt="">
-    </div>
+    </div> -->
     <HeroSection />
     <AboutSection />
     <ServiceSection />

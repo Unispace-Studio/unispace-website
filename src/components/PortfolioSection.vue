@@ -30,16 +30,14 @@ const portfolios = [
 </script>
 
 <template>
-  <div
-    id="portfolio-section"
-    class="w-full h-[175vh] flex gap-[108px] justify-center relative z-10 pt-[72px]"
-  >
-    <div class="w-[286px] flex flex-col gap-[45px] text-right mt-[44px]">
-      <h4 class="text-[52px] font-goldman">Pekerjaan Kami</h4>
-      <hr />
-      <p class="text-[24px]">Design Website yang Telah Dikerjakan Unispace</p>
+  <div id="portfolio-section"
+    class="w-full xl:h-[175vh] flex flex-col xl:flex-row gap-[108px] xl:justify-center relative z-10 pt-[72px]">
+    <div class="xl:w-[286px] flex flex-col gap-[45px] text-center xl:text-right mt-[44px]">
+      <h4 class="text-[40px] xl:text-[52px] font-goldman">Pekerjaan Kami</h4>
+      <hr class="hidden xl:inline" />
+      <p class="text-[14px] xl:text-[24px]">Design Website yang Telah Dikerjakan Unispace</p>
     </div>
-    <div id="cards" class="flex flex-wrap gap-[51px] w-[771px] self-start">
+    <div id="cards" class="flex flex-col xl:flex-row xl:flex-wrap gap-[51px] xl:w-[771px] self-center xl:self-start">
       <PortfolioCard v-for="item in portfolios" :key="item.id" :item="item" />
     </div>
   </div>

@@ -19,7 +19,7 @@ const scrollTo = (sectionId) => {
 </script>
 
 <template>
-    <div id="footer" class="w-full h-[75vh] flex flex-col justify-end items-center relative z-10">
+    <div id="footer" class="w-full h-[75vh] hidden xl:flex flex-col justify-end items-center relative z-10">
         <div class="h-full flex items-center gap-[100px]">
             <div class="w-[400px] flex flex-col gap-[24px]">
                 <div id="logo" class="flex gap-[22px] items-center">
