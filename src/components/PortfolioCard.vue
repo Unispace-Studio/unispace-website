@@ -17,10 +17,11 @@ const props = defineProps(["item"]);
       </div>
       <button
         class="p-[1px] bg-gradient-to-b from-grad-1 to-grad-2 rounded-[6px] overflow-hidden self-center group cursor-pointer">
-        <div
-          class="px-[20px] py-[7px] flex gap-[8px] bg-[#272732] group-hover:bg-white/0 rounded-[6px] transition-all duration-150">
-          <img src="/assets/icons/view.svg" alt="" />
-          <p class="text-[14px] font-medium">Live Preview</p>
+        <div class=" bg-[#272732] group-hover:bg-white/0 rounded-[6px] transition-all duration-150">
+          <a :href="props.item.link" class="px-[20px] py-[7px] flex gap-[8px]">
+            <img src="/assets/icons/view.svg" alt="" />
+            <p class="text-[14px] font-medium">Live Preview</p>
+          </a>
         </div>
       </button>
     </div>
