@@ -10,7 +10,6 @@ import PricingSection from "../components/PricingSection.vue";
 import Footer from "../components/Footer.vue";
 
 import { ref, onMounted, onUnmounted } from 'vue'
-
 const showButton = ref(false)
 
 const handleScroll = () => {

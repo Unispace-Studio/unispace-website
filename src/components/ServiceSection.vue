@@ -27,14 +27,14 @@ const service = [
     title: "Company Profile",
     description:
       "Bangun citra profesional untuk bisnismu lewat website profil yang modern dan informatif.",
-    image: "e-commerce",
+    image: "personal",
     position: "object-left",
   },
   {
     title: "Landing Page",
     description:
       "Tingkatkan konversi dengan landing page yang fokus, cepat, dan menarik perhatian.",
-    image: "e-commerce",
+    image: "business-dashboard",
     position: "object-center",
   },
   {
