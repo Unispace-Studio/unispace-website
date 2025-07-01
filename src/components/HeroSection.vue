@@ -16,27 +16,27 @@ const scrollTo = (sectionId) => {
       <div class="flex flex-col gap-[52px]">
         <div class="flex flex-col gap-[29px]">
           <h1
-            class="text-[36px] xl:text-[68px] text-center xl:text-start font-goldman xl:w-[632px] leading-[52px] xl:leading-[82px]">
+            class="text-[36px] xl:text-[68px] text-center xl:text-start font-goldman xl:w-[632px] leading-[52px] xl:leading-[82px]" data-aos="fade-right" data-aos-delay="200">
             Bikin Website Profesional Tanpa Ribet
           </h1>
-          <p class="xl:w-[616px] text-[14px] xl:text-[18px] text-center xl:text-start">
+          <p class="xl:w-[616px] text-[14px] xl:text-[18px] text-center xl:text-start" data-aos="fade-right" data-aos-delay="400">
             Unispace bantu bisnis kamu tampil modern dan terpercaya lewat
             website cepat jadi, responsif, dan langsung siap dipakai
           </p>
         </div>
-        <div class="flex flex-col xl:flex-row gap-[29px]">
+        <div class="flex flex-col xl:flex-row items-center gap-[29px]">
           <button
-            class="bg-gradient-to-b from-grad-1 to-grad-2 px-[24px] py-[15px] font-medium rounded-[10px] cursor-pointer"><a
+            class="bg-gradient-to-b from-grad-1 to-grad-2 w-[280px] xl:w-auto px-[24px] py-[15px] text-[14px] xl:text-[16px] font-medium rounded-[10px] cursor-pointer" data-aos="fade-up" data-aos-delay="600"><a
               href="https://wa.me/628174745070">Konsultasi Gratis via WhatsApp</a>
           </button>
           <button
-            class="border border-[#52526E] px-[24px] py-[15px] text-secondary font-medium rounded-[10px] cursor-pointer"
+            class="border border-[#52526E] w-[280px] xl:w-auto px-[24px] py-[15px] text-[14px] xl:text-[16px] text-secondary font-medium rounded-[10px] cursor-pointer" data-aos="fade-up" data-aos-delay="700"
             @click="scrollTo('portfolio-section')">
             Lihat Portofolio
           </button>
         </div>
       </div>
-      <img src="../assets/astronaut.png" alt="" class="hidden xl:inline" />
+      <img src="../assets/astronaut.png" alt="" class="hidden xl:inline" data-aos="fade-left"/>
     </div>
   </div>
 </template>

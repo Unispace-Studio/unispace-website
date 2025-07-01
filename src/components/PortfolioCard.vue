@@ -1,10 +1,10 @@
 <script setup>
-const props = defineProps(["item"]);
+const props = defineProps(["item", "index"]);
 </script>
 
 <template>
   <div id="portfolio-card"
-    class="w-[320px] xl:w-[360px] h-[415px] rounded-[16px] bg-white/10 flex flex-col justify-center items-center gap-[32px]">
+    class="w-[320px] xl:w-[360px] h-[415px] rounded-[16px] bg-white/10 flex flex-col justify-center items-center gap-[32px]" data-aos="fade-up" :data-aos-delay="index * 150">
     <div class="h-[calc(270/290*163px)] xl:h-[163px] w-[270px] xl:w-[290px] rounded-[10px] overflow-hidden bg-white">
       <img :src="'/assets/' + props.item.title.toLowerCase() + '.png'" alt="" />
     </div>

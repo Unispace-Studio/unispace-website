@@ -54,16 +54,16 @@ const pricingData = [
   <div id="pricing-section"
     class="w-full xl:h-[calc(175vh)] flex flex-col gap-[76px] pt-[72px] relative z-10 px-[12px] xl:px-0">
     <div class="w-full flex flex-col items-center gap-[32px] text-center xl:text-start">
-      <h2 class="text-[40px] xl:text-[52px] font-goldman">
+      <h2 class="text-[40px] xl:text-[52px] font-goldman" data-aos="fade-up" data-aos-delay="0">
         Paket Website yang Bisa Kamu Pilih
       </h2>
-      <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center">
+      <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center" data-aos="fade-up" data-aos-delay="200">
         Pilih paket yang sesuai dengan kebutuhan bisnismu — mulai dari kehadiran
         online sederhana hingga website lengkap siap pakai.
       </p>
     </div>
-    <div class="w-full flex flex-col xl:flex-row xl:justify-center gap-[38px]">
-      <PricingTable v-for="item in pricingData" :key="item.id" :item="item" />
+    <div class="w-full flex flex-col xl:flex-row xl:justify-center items-center xl:items-start gap-[38px]">
+      <PricingTable v-for="(item, index) in pricingData" :key="item.id" :item="item":index="index" />
     </div>
   </div>
 </template>

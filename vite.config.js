@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
   server: {
-    allowedHosts: ['815a-103-171-165-204.ngrok-free.app'],
+    allowedHosts: ['9635-103-171-165-204.ngrok-free.app'],
     host: true, // Penting biar bisa diakses dari luar localhost
   },
 })

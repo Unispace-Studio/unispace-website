@@ -51,14 +51,14 @@ const service = [
   <div id="service-section"
     class="w-full xl:h-[calc(200vh)] flex flex-col gap-[76px] pt-[72px] relative z-10 px-[12px] xl:px-0">
     <div class="w-full flex flex-col items-center gap-[32px]">
-      <h2 class="text-[40px] xl:text-[52px] font-goldman">Layanan Kami</h2>
-      <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center">
+      <h2 class="text-[40px] xl:text-[52px] font-goldman" data-aos="fade-up" data-aos-delay="0">Layanan Kami</h2>
+      <p class="text-[14px] xl:text-[20px] xl:w-[960px] text-center" data-aos="fade-up" data-aos-delay="200">
         Kami menyediakan berbagai solusi pembuatan website yang disesuaikan
         dengan kebutuhan bisnis dan personal Anda.
       </p>
     </div>
     <div class="flex justify-center gap-[50px] flex-wrap">
-      <ServiceCard :item="item" v-for="item in service" :key="item.id" />
+      <ServiceCard :item="item" :index="index" v-for="(item, index) in service" :key="item.id" />
     </div>
   </div>
 </template>
