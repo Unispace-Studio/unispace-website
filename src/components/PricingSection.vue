@@ -4,7 +4,7 @@ import PricingTable from "./PricingTable.vue";
 const pricingData = [
   {
     category: "Simple",
-    price: 100000,
+    price: 1000000,
     discount: 0.5,
     features: [
       "1 Halaman (Landing Page)",
