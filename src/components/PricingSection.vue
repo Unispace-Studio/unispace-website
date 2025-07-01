@@ -4,17 +4,17 @@ import PricingTable from "./PricingTable.vue";
 const pricingData = [
   {
     category: "Simple",
-    price: 1500000,
-    discount: 0.2,
+    price: 100000,
+    discount: 0.5,
     features: [
-      "1–2 Halaman (Homepage, About, dll)",
+      "1 Halaman (Landing Page)",
       "Desain responsif (mobile & desktop)",
       "Gratis hosting (shared plan)",
-      "Free .com domain",
+      "Free .my.id domain",
       "SEO dasar (title & meta description)",
       "Optimasi kecepatan ringan",
       "2x revisi minor",
-      "3 hari pengerjaan",
+      "2 hari pengerjaan",
     ],
   },
   {
